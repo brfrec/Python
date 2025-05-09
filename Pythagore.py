@@ -9,16 +9,10 @@ if choix_calcul == 1:
     ab()
 
 elif choix_calcul == 2:
-    AB = int(input("Longueur de BC : "))
-    AC = int(input("Longueur de AC (hypothénuse): "))
-    BC = sqrt((AC**2)-(AB**2))
-    print ("La longueur de BC vaut", BC)
+    bc()
 
 elif choix_calcul == 3:
-    AB = int(input("Longueur de AB : "))
-    BC = int(input("Longueur de BC : "))
-    AC = sqrt((AB**2)+(BC**2))
-    print ("La longueur de AC vaut", AC)
+    ac()
 
 else:
     print("Ce choix n'est pas proposé")
