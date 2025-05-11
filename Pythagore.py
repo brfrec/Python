@@ -1,5 +1,5 @@
 from math import *
-from Fonction import *
+from FonctionPythagore import *
 
 print (" ... PYTHAGORE ... ")
 print ("Ce petit programme calcule la longueur d'un coté du'un triangle rectangle en fonction de la longueur de ses deux autres cotés")
