@@ -1,6 +1,7 @@
 from math import *
 
 
+
 def ab():
     BC = int(input("Longueur de BC : "))
     AC = int(input("Longueur de AC (hypothénuse): "))
@@ -18,3 +19,16 @@ def ac():
     BC = int(input("Longueur de BC : "))
     AC = sqrt((AB ** 2) + (BC ** 2))
     print("La longueur de AC vaut", AC)
+
+def longeur():
+    if choix_calcul == 1:
+        ab()
+
+    elif choix_calcul == 2:
+        bc()
+
+    elif choix_calcul == 3:
+        ac()
+
+    else:
+        print("Ce choix n'est pas proposé")
