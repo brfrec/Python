@@ -13,9 +13,9 @@ while recommencer:
     except:
         print ("Valeur invalide !")
     else:
+       
         if choix_calcul == 1:
             ab()
-            
             rejouer(recommencer)
         elif choix_calcul == 2:
             bc()
@@ -23,4 +23,6 @@ while recommencer:
         elif choix_calcul == 3:
             ac()
             rejouer(recommencer)
-        
+        else:
+            print("choix impossible")
+     
