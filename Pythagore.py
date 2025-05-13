@@ -15,24 +15,12 @@ while recommencer:
     else:
         if choix_calcul == 1:
             ab()
-            print("Autre calcul ?: ")
-            try:
-                choixRecommencer = int(input("1 - Oui\n2 - Non\nVotre choix :"))
-            except:
-                print("Entrée invalide")
-            else:
-                if choixRecommencer == 1:
-                    recommencer = 1
-                elif choixRecommencer == 2:
-                    recommencer = 0
-                else:
-                    print("Choix impossible")
-
+            
+            rejouer(recommencer)
         elif choix_calcul == 2:
             bc()
-
+            rejouer(recommencer)
         elif choix_calcul == 3:
             ac()
-
-        else:
-            print("Ce choix n'est pas proposé")
+            rejouer(recommencer)
+        
