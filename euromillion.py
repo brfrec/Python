@@ -3,7 +3,8 @@
 import random
 import os
 os.system("clear")
-print("Voici les prochains numéros gagnants de l'euromillion !")
+titre = "Voici les prochains numéros gagnants de l'€uromillion !"
+print(titre.center(100))
 
 liste_numero = []
 liste_numero_etoile = []
