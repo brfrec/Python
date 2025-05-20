@@ -14,27 +14,35 @@ for i in range(1, 11):
     liste_numero_etoile.append(i) 
 numero1 = random.randint(1,49)
 
-print("\033[0;32mVoici le premier numéro : \033[0m" + str(numero1))
+
+
 numero2 = random.randint(1,49)
-while numero2 == numero1:
+if numero2 == numero1:
     numero2 = random.randint(1,49) 
-print("\033[0;32mVoici le deuxième numéro : \033[0m" + str(numero2))
+
 numero3 = random.randint(1,49)
-while numero3 == numero1 or numero3 == numero2:
+if numero3 == numero1 or numero3 == numero2:
     numero3 = random.randint(1,49)
-print("\033[0;32mVoici le troisième numéro : \033[0m" + str(numero3))
 numero4 = random.randint(1,49)
-while numero4 == numero1 or numero4 == numero2 or numero4 == numero3:
+if numero4 == numero1 or numero4 == numero2 or numero4 == numero3:
     numero4 = random.randint(1,49)
 numero5 = random.randint(1,49)
-print("\033[0;32mVoici le quatrième numéro : \033[0m" + str(numero4))
-while numero5 == numero1 or numero5 == numero2 or numero5 == numero3 or numero5 == numero4:
+if numero5 == numero1 or numero5 == numero2 or numero5 == numero3 or numero5 == numero4:
     numero5 = random.randint(1,49)
-print("\033[0;32mVoici le cinquième numéro : \033[0m" + str(numero5))
+liste_numero_sortie = [numero1, numero2, numero3, numero4, numero5]
+sortie_Triée = sorted(liste_numero_sortie)
 
+print("\033[0;32mVoici les numéros gagnants : \033[0m" + str (sortie_Triée[0]))
+print("\033[0;32mVoici le deuxième numéro : \033[0m" + str (sortie_Triée[1]))
+print("\033[0;32mVoici le troisième numéro : \033[0m" + str (sortie_Triée[2]))
+print("\033[0;32mVoici le quatrième numéro : \033[0m" + str (sortie_Triée[3]))
+print("\033[0;32mVoici le cinquième numéro : \033[0m" + str (sortie_Triée[4]))
 etoile1 = random.randint(1,10)
-print("\n\033[0;35mVoici la première étoile : \033[0m" + str(etoile1))
+
 etoile2 = random.randint(1,10)
-while etoile2 == etoile1:
+liste_etoile_sortie = [etoile1, etoile2]
+sortie_etoile_Triée = sorted(liste_etoile_sortie)
+print("\033[0;35mVoici la première étoile : \033[0m" + str(sortie_etoile_Triée[0]))
+if etoile2 == etoile1:
     etoile2 = random.randint(1,10)
-print("\033[0;35mVoici la deuxième étoile : \033[0m" + str(etoile2))
+print("\033[0;35mVoici la deuxième étoile : \033[0m" + str(sortie_etoile_Triée[1]))
