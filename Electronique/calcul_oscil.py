@@ -1,4 +1,5 @@
 from math import *
+# Calculs divers sur oscillateurs LC
 encore = 1
 
 while encore == 1:
