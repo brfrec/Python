@@ -1,7 +1,9 @@
 from math import *
 # Calculs divers sur oscillateurs LC
 encore = 1
-
+def Dire_aurevoir():
+    print("Merci d'avoir utilisé le calculateur d'oscillateurs LC.")
+    print("Au revoir !")
 while encore == 1:
     
     print("Calculateur d'oscillateurs LC")
@@ -23,7 +25,7 @@ while encore == 1:
         recommencer = int(input("Voulez vous faire un autre calcul ? (1 pour oui, 0 pour non)"))
         if recommencer == 0:
             encore = 0
-            print("Merci d'avoir utilisé le calculateur d'oscillateurs LC.")
+            Dire_aurevoir()
         elif recommencer == 1:
             encore = 1    
 
@@ -39,7 +41,7 @@ while encore == 1:
         recommencer = int(input("Voulez vous faire un autre calcul ? (1 pour oui, 0 pour non)"))
         if recommencer == 0:
             encore = 0
-            print("Merci d'avoir utilisé le calculateur d'oscillateurs LC.")
+            Dire_aurevoir() 
         elif recommencer == 1:
             continue
     
@@ -55,7 +57,7 @@ while encore == 1:
         recommencer = int(input("Voulez vous faire un autre calcul ? (1 pour oui, 0 pour non)"))
         if recommencer == 0:
             encore = 0
-            print("Merci d'avoir utilisé le calculateur d'oscillateurs LC.")
+            Dire_aurevoir()
         elif recommencer == 1:
             continue
     
