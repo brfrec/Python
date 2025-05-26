@@ -1,5 +1,5 @@
 from math import *
-
+#pull
 print (" Calculs divers sur oscillateurs LC")
 print ("Quelle valeur voulez vous calculer ?")
 print ("1. Fréquence de résonance")
