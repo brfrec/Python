@@ -1,3 +1,7 @@
+from math import *
+
+
+
 def calculResistance():
     print("Calcul de la résistance")
 
@@ -29,13 +33,11 @@ def calculCondensateur():
         C = Tau / R
         if C < 1e-6:
             C = C * 1e9
-            print("La valeur du condensateur est :", C, "nF")
-        elif C >= 1e-6 and C < 1e-3:
-            C = C * 1e6
-            print("La valeur du condensateur est :", C, "µF")
-        elif C >= 1e-3 and C < 1:
-            print("La valeur du condensateur est :", C, "mF")
-                
+            print("La valeur du condensateur est :",ceil(C) , "nF")
+        elif C >= 1e-6 and C < 1:
+             C = C * 1e6
+             print("La valeur du condensateur est :",ceil(C) , "µF")
+        
     except ValueError:
         print("Erreur : Veuillez entrer des valeurs numériques valides.")
 
@@ -58,4 +60,4 @@ def calculTau():
     except ValueError:
         print("Erreur : Veuillez entrer des valeurs numériques valides.")
 
-        
+
