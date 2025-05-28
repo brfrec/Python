@@ -6,12 +6,7 @@ def Explication():
     print("\n")  # Ajout d'une ligne vide pour une meilleure lisibilité
 
 
-def ConversionO(resistance):
-    
 
-# def ConversionF(capacité):
-
-#def ConversionT(secondes):
 
 
 
