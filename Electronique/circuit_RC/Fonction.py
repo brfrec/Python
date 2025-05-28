@@ -6,32 +6,12 @@ def Explication():
     print("\n")  # Ajout d'une ligne vide pour une meilleure lisibilité
 
 
-#def ConversionUnite():
-
-
-def calculResistance():
-    print("Calcul de la résistance")
-
-    try:
-        C = float(input("Entrez la valeur du condensateur : "))
-        Tau = float(input("Entrez le temps de charge/décharge (Tau) : "))
-        R = Tau / C
-        if R < 1:
-            R = R * 1000
-            print("La valeur de la résistance est :",R," mHoms")
-        elif R > 1 and R < 1000:
-            print("La valeur de la résistance est :", R, " Ohms")
-        elif R > 1000 and R < 1000000:
-            R = R / 1000
-            print("La valeur de la résistance est :", R, " KOhms")  
-        elif R > 1000000 and R < 1000000000:
-            R = R / 1000000
-            print("La valeur de la résistance est :", R, " MOhms")      
-        
-    except ValueError:
-        print("Erreur : Veuillez entrer des valeurs numériques valides.")   
+def ConversionO(resistance):
     
 
+# def ConversionF(capacité):
+
+#def ConversionT(secondes):
 
 
 
