@@ -3,9 +3,9 @@ from math import *
 
 def calculAngles (AB,BC,AC):
     angleRadianA = acos(AB/AC)
-    angleDegreA = degrees(angleRadianA)
+    angleDegreA = round (degrees(angleRadianA), 2)
     angleRadianB = acos(BC/AC)
-    angleDegreB = degrees(angleRadianB)
+    angleDegreB = round(degrees(angleRadianB), 2)
     print("L'angle A vaut : ", angleDegreA )
     print("L'angle B vaut : ", angleDegreB )
     
